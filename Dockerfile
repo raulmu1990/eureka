@@ -2,7 +2,7 @@ FROM maven:3.8.5-openjdk-17 AS build
 
 COPY . .
 
-RUN ./mvnw clean package
+RUN mvn clean package
 
 FROM openjdk:17
 
